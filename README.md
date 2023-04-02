@@ -1,7 +1,7 @@
-#PPM Image Reader and Writer
+#PPM Image Reader and Writer  
 This program reads a PPM (Portable Pixmap) image file, ignoring any comments, and writes the image to a new PPM file. The program is written in C and uses a custom utility library ppmUtil.
 
-##Usage
+##Usage  
 Compile the program using the following command:
 ```
 gcc -o ppmReadWrite main.c ppmUtil.c -I.
@@ -11,7 +11,7 @@ Run the program with the input PPM file and the desired output PPM file as comma
 ./ppmReadWrite input.ppm output.ppm
 ```
 
-##Program Structure
+##Program Structure  
 The program is divided into two files:
 
 main.c: Contains the main function which reads the input file, processes the image, and writes it to the output file.
