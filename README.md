@@ -4,11 +4,11 @@ This program reads a PPM (Portable Pixmap) image file, ignoring any comments, an
 ## Usage  
 Compile the program using the following command:
 ```
-gcc -o ppmReadWrite main.c ppmUtil.c -I.
+gcc -o ppmReadWrite driver.c ppmUtil.c
 ```
 Run the program with the input PPM file and the desired output PPM file as command-line arguments:
 ```
-./ppmReadWrite input.ppm output.ppm
+./ppmReadWrite <input ppm file> <output ppm file>
 ```
 
 ## Program Structure  
