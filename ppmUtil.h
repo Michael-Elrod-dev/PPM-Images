@@ -1,9 +1,3 @@
-/******************
- * Michael Elrod
- * mselrod
- * mselrod@clemson.edu
- * Lab 9 005
-*******************/
 #ifndef PPMUTIL_H
 #define PPMUTIL_H
 
