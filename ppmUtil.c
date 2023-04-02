@@ -1,9 +1,3 @@
-/******************
- * Michael Elrod
- * mselrod
- * mselrod@clemson.edu
- * Lab 9 005
-*******************/
 #include "ppmUtil.h"
 
 // Helper function to check for comments and ignore them.
