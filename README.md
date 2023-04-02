@@ -1,5 +1,5 @@
 # PPM Image Reader and Writer  
-This program reads a PPM (Portable Pixmap) image file, ignoring any comments, and writes the image to a new PPM file. The program is written in C and uses a custom utility library ppmUtil.
+This program reads a PPM (Portable Pixmap) image file, ignoring any comments, and writes the image to a new PPM file. The program is written in C.
 
 ## Usage  
 Compile the program using the following command:
