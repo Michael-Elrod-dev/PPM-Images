@@ -1,9 +1,3 @@
-/******************
- * Michael Elrod
- * mselrod
- * mselrod@clemson.edu
- * Lab 9 005
-*******************/
 #include <stdio.h>
 #include "ppmUtil.h"
 
