@@ -1,7 +1,7 @@
-#PPM Image Reader and Writer  
+# PPM Image Reader and Writer  
 This program reads a PPM (Portable Pixmap) image file, ignoring any comments, and writes the image to a new PPM file. The program is written in C and uses a custom utility library ppmUtil.
 
-##Usage  
+## Usage  
 Compile the program using the following command:
 ```
 gcc -o ppmReadWrite main.c ppmUtil.c -I.
@@ -11,19 +11,19 @@ Run the program with the input PPM file and the desired output PPM file as comma
 ./ppmReadWrite input.ppm output.ppm
 ```
 
-##Program Structure  
+## Program Structure  
 The program is divided into two files:
 
-main.c: Contains the main function which reads the input file, processes the image, and writes it to the output file.
-ppmUtil.c: Contains utility functions for reading and writing PPM image files, as well as handling memory allocation and comments.
+- driver.c: Contains the main function which reads the input file, processes the image, and writes it to the output file.
+- ppmUtil.c: Contains utility functions for reading and writing PPM image files, as well as handling memory allocation and comments.
 
-##Utility Functions
-void ckComment(FILE* fp): Checks for comments in the PPM file and ignores them.
-void readHeader(FILE* fp, header_t* header): Reads the header information from the PPM file.
-pixel_t* readPixels(FILE* fp, header_t header): Reads the pixel data from the PPM file.
-void writeHeader(FILE* fp, header_t header): Writes the header information to the output PPM file.
-void writePixels(FILE* fp, pixel_t* pixels, header_t header): Writes the pixel data to the output PPM file.
-pixel_t* read(FILE* fp, header_t* header): Reads the entire PPM image, including header and pixel data.
-void write(FILE* fp, header_t header, pixel_t* pixels): Writes the entire PPM image, including header and pixel data.
-pixel_t* allocatePixMemory(header_t header): Allocates memory for the pixel data based on the image dimensions.
-void freeMemory(pixel_t* pixels): Frees the allocated memory for pixel data.
+## Utility Functions
+- void ckComment(FILE* fp): Checks for comments in the PPM file and ignores them.
+- void readHeader(FILE* fp, header_t* header): Reads the header information from the PPM file.
+- pixel_t* readPixels(FILE* fp, header_t header): Reads the pixel data from the PPM file.
+- void writeHeader(FILE* fp, header_t header): Writes the header information to the output PPM file.
+- void writePixels(FILE* fp, pixel_t* pixels, header_t header): Writes the pixel data to the output PPM file.
+- pixel_t* read(FILE* fp, header_t* header): Reads the entire PPM image, including header and pixel data.
+- void write(FILE* fp, header_t header, pixel_t* pixels): Writes the entire PPM image, including header and pixel data.
+- pixel_t* allocatePixMemory(header_t header): Allocates memory for the pixel data based on the image dimensions.
+- void freeMemory(pixel_t* pixels): Frees the allocated memory for pixel data.
