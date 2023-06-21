@@ -17,7 +17,7 @@ The program is divided into two files:
 - driver.c: Contains the main function which reads the input file, processes the image, and writes it to the output file.
 - ppmUtil.c: Contains utility functions for reading and writing PPM image files, as well as handling memory allocation and comments.
 
-## Utility Functions
+## Functions
 - void ckComment(FILE* fp): Checks for comments in the PPM file and ignores them.
 - void readHeader(FILE* fp, header_t* header): Reads the header information from the PPM file.
 - pixel_t* readPixels(FILE* fp, header_t header): Reads the pixel data from the PPM file.
